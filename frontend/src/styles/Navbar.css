@@ -1,0 +1,151 @@
+/* Basic Reset */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  padding: 1rem 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 70px;
+}
+
+.navbar-logo h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-logo h1:hover {
+  transform: scale(1.1);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar-links li {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links li:hover {
+  transform: scale(1.1);
+}
+
+.navbar-links a:hover {
+  color: #fff;
+  background-color: #ff9800;
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-toggle:hover {
+  color: #ff9800;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+    border: 2px solid #ffce00;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    border: 2px solid #ffce00;
+
+  }
+
+  .navbar-links a {
+    
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+/* User Greeting */
+.navbar-user {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 1rem;
+  color: #ffce00;
+}
+
+/* Logout Button */
+.logout-button {
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logout-button:hover {
+  background: #e64a19;
+  transform: scale(1.05);
+}
+
+/* Navbar Shadow */
+.navbar {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}

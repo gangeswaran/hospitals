@@ -1,0 +1,51 @@
+.appointments-container {
+  padding: 20px;
+  color: #f8f9fa; /* Slightly off-white for better contrast */
+  font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+.appointment-item {
+  background: linear-gradient(90deg, #6b11cb7b, #2574fcc3);
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appointment-item:hover {
+  transform: translateY(-5px); /* Slight hover lift */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.appointment-item h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #ffcccb; /* Light red for contrast */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add subtle shadow to text */
+}
+
+.appointment-item p {
+  margin: 8px 0;
+  font-size: 1em;
+  color: #f8f9fa; /* Consistent color for text */
+}
+
+.appointment-item p strong {
+  font-weight: bold;
+  color: #ffebcd; /* Lighter color for emphasis */
+}
+
+.appointment-item .appointment-date {
+  font-style: italic;
+  color: #ffe4e1; /* Muted color for date */
+}
+
+.appointment-item .appointment-notes {
+  background-color: rgba(0, 0, 0, 0.2); /* Slightly darker background */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #fafafa;
+}
